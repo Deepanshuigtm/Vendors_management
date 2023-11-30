@@ -8,16 +8,16 @@ Vendor Management System using Django and Django REST Framework. This system wil
 * Django and Django REST Framework installed
 
 # Installation Steps
-1.Clone the repository:
+* Clone the repository:
   git clone https://github.com/your-username/vendor-management-system.git
-2.Navigate to the project directory:
+* Navigate to the project directory:
   cd vendor-management-system
-3.Install project dependencies:
+* Install project dependencies:
   pip install -r requirements.txt
-4.Apply database migrations:
+* Apply database migrations:
   python manage.py makemigrations
   python manage.py migrate
-5.Start the development server:
+* Start the development server:
   python manage.py runserver
 
 # API Endpoints
