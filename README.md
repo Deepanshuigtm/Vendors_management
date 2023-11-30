@@ -51,7 +51,7 @@ Vendor Management System using Django and Django REST Framework. This system wil
 Model Design
 Track purchase orders with fields like PO number, vendor reference, order date, items, quantity, and status.
 
-# API Endpoints
+## API Endpoints
 
 * POST /api/purchase_orders/
 Create a purchase order.
@@ -74,7 +74,7 @@ Delete a purchase order.
 Replace {po_id} with the ID of the purchase order.
 
 # Vendor Performance Evaluation
-# Backend Logic for Performance Metrics
+## Backend Logic for Performance Metrics
 
 * On-Time Delivery Rate:
 Calculated each time a PO status changes to 'completed'.
@@ -92,7 +92,7 @@ Logic: Compute the time difference between issue_date and acknowledgment_date fo
 Calculated upon any change in PO status.
 Logic: Divide the number of successfully fulfilled POs (status 'completed' without issues) by the total number of POs issued to the vendor.
 
-# API Endpoint Implementation
+## API Endpoint Implementation
 
 * Vendor Performance Endpoint (GET /api/vendors/{vendor_id}/performance):
 Retrieves the calculated performance metrics for a specific vendor.
@@ -102,5 +102,5 @@ Returns data including on_time_delivery_rate, quality_rating_avg, average_respon
 Endpoint for vendors to acknowledge POs.
 Updates acknowledgment_date and triggers the recalculation of average_response_time.
 
-# Note: Replace http://127.0.0.1:8000 with the appropriate URL if deploying the application to a different environment.
+Note: Replace http://127.0.0.1:8000 with the appropriate URL if deploying the application to a different environment.
 
